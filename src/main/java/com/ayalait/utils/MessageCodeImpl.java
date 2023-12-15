@@ -21,5 +21,14 @@ public class MessageCodeImpl {
         }
         return resultMenssage;
     }
+    
+    public static String getMensajeAPIPago(String code) {
+        String resultMenssage="No se ha definido mensaje para el codigo: "+code;
+        Map<String,String> message= Messages.listMessagesApiPago();
+        if(message.containsKey(code)){
+            return message.get(code);
+        }
+        return resultMenssage;
+    }
 
 }
