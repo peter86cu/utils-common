@@ -22,9 +22,36 @@ public class MessageCodeImpl {
         return resultMenssage;
     }
     
+    public static String getMensajeServiceUsuarios(String code) {
+        String resultMenssage="No se ha definido mensaje para el codigo: "+code;
+        Map<String,String> message= Messages.listMessagesUsuarios();
+        if(message.containsKey(code)){
+            return message.get(code);
+        }
+        return resultMenssage;
+    }
+    
     public static String getMensajeAPIPago(String code) {
         String resultMenssage="No se ha definido mensaje para el codigo: "+code;
         Map<String,String> message= Messages.listMessagesApiPago();
+        if(message.containsKey(code)){
+            return message.get(code);
+        }
+        return resultMenssage;
+    }
+    
+    public static String getMensajeServiceEmpleados(String code) {
+        String resultMenssage="No se ha definido mensaje para el codigo: "+code;
+        Map<String,String> message= Messages.listMessagesEmpleado();
+        if(message.containsKey(code)){
+            return message.get(code);
+        }
+        return resultMenssage;
+    }
+    
+    public static String getMensajeServiceTerminal(String code) {
+        String resultMenssage="No se ha definido mensaje para el codigo: "+code;
+        Map<String,String> message= Messages.listMessagesTerminal();
         if(message.containsKey(code)){
             return message.get(code);
         }

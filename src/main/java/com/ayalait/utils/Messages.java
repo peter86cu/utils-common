@@ -15,6 +15,10 @@ public class Messages {
     //MENSAJES NO OK
     public static final String CODE_SERVICE_PRODUCT_SEARCH_NOOK="0004";
     public static final String CODE_SERVICE_PRODUCT_NOOK="0005";
+    
+    //MENSAJES HTP
+    public static final String err_connection_timed_out="1000";
+
 
 	/********************MENSAJE PRODUCTO FIN******************************/
 
@@ -22,6 +26,43 @@ public class Messages {
     public static Map<String, String> listMessagesHTTP() {
         Map<String,String> message= new HashMap<>();
         message.put("200","OK");
+        message.put("406","Credenciales incorreptas.");
+        message.put("1000","Se acabó el tiempo de conexión");
+        message.put("1001","Token expirado o no enviado en el request.");
+        return message;
+    }
+    
+    public static Map<String, String> listMessagesTerminal() {
+        Map<String,String> message= new HashMap<>();
+        message.put("0001","El producto fue creado correptamente.");
+        message.put("406","El día ya esta abierto. ");
+        message.put("401","El día no esta abierto.");
+
+        message.put("0004","No existe el producto.");
+        message.put("0005","Ocurrio un error, intente de nuevo o pongase en contacto con un Administrador.");
+
+        return message;
+    }
+    
+    public static Map<String, String> listMessagesUsuarios() {
+        Map<String,String> message= new HashMap<>();
+        message.put("7000","Expiró la confirmación del registro del usuario.");
+        message.put("70001", "Su cuenta se ha creado correctamente. Para acceder al [portal del cliente], haga clic en el siguiente enlace.");
+        message.put("70002","Ya existe un registro con la dirección de correo ingresada.");
+        message.put("70003","Ya existe un registro con el documento ingresado.");
+
+        return message;
+    }
+    
+    public static Map<String, String> listMessagesEmpleado() {
+        Map<String,String> message= new HashMap<>();
+        message.put("0001","El producto fue creado correptamente.");
+        message.put("400","No existe calendario generado para el empleado ");
+        message.put("401","El día no esta abierto.");
+
+        message.put("0004","No existe el producto.");
+        message.put("0005","Ocurrio un error, intente de nuevo o pongase en contacto con un Administrador.");
+
         return message;
     }
     
