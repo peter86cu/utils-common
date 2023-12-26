@@ -28,6 +28,7 @@ public class ResponseApi {
 	private String cartIDSession;
 	private List<OrdenesPagoUsuarios> comprasUsuarios;
 	private List<TipoDocumento> tipoDocumento;
+	private List<DptoPais> departamentos;
 	private ErrorState error;
 	
 	public int getCode() {
@@ -170,6 +171,12 @@ public class ResponseApi {
 	}
 	public void setTipoDocumento(List<TipoDocumento> tipoDocumento) {
 		this.tipoDocumento = tipoDocumento;
+	}
+	public List<DptoPais> getDepartamentos() {
+		return departamentos;
+	}
+	public void setDepartamentos(List<DptoPais> departamentos) {
+		this.departamentos = departamentos;
 	}
 	
 	

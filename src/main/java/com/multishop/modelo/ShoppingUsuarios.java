@@ -12,6 +12,7 @@ public class ShoppingUsuarios  {
 	private String document_type;
 	private String password;
 	private int idaddress;
+	private int rol;
 	private int state;
 
 
@@ -109,6 +110,16 @@ public class ShoppingUsuarios  {
 
 	public void setIdaddress(int idaddress) {
 		this.idaddress = idaddress;
+	}
+
+
+	public int getRol() {
+		return rol;
+	}
+
+
+	public void setRol(int rol) {
+		this.rol = rol;
 	}
 	
 	

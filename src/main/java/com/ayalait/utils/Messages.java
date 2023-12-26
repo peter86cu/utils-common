@@ -26,9 +26,9 @@ public class Messages {
     public static Map<String, String> listMessagesHTTP() {
         Map<String,String> message= new HashMap<>();
         message.put("200","OK");
-        message.put("406","Credenciales incorreptas.");
+        
         message.put("1000","Se acabó el tiempo de conexión");
-        message.put("1001","Token expirado o no enviado en el request.");
+        message.put("1001","Token no enviado en el request.");
         return message;
     }
     
@@ -50,6 +50,18 @@ public class Messages {
         message.put("70001", "Su cuenta se ha creado correctamente. Para acceder al [portal del cliente], haga clic en el siguiente enlace.");
         message.put("70002","Ya existe un registro con la dirección de correo ingresada.");
         message.put("70003","Ya existe un registro con el documento ingresado.");
+        message.put("70004","El usuario no existe.");
+        message.put("406","Credenciales incorreptas.");
+        message.put("2","El usuario esta INACTIVO.");
+        message.put("3","El usuario esta ELIMINADO.");
+        message.put("4","El usuario esta BLOQUEADO.");
+        message.put("5","El usuario esta NO EXISTE.");
+        message.put("6","El usuario esta POR CONFIRMAR. Habilitelo a traves del mail enviado.");
+
+
+
+
+
 
         return message;
     }
@@ -68,13 +80,21 @@ public class Messages {
     
     public static Map<String, String> listMessagesService() {
         Map<String,String> message= new HashMap<>();
-        message.put("0001","El producto fue creado correptamente.");
+        message.put("0001","El producto fue creado correctamente.");
         message.put("0002","El producto ha sido eliminado correptamente.");
         message.put("0003","El producto se actualizó correptamente.");
 
         message.put("0004","No existe el producto.");
         message.put("0005","Ocurrio un error, intente de nuevo o pongase en contacto con un Administrador.");
 
+        return message;
+    }
+    
+    
+    public static Map<String, String> listMessagesCompras() {
+        Map<String,String> message= new HashMap<>();
+        message.put("10001","Usted no ha realizado ninguna compra aún.");
+        
         return message;
     }
     

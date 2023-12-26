@@ -10,6 +10,7 @@ public class OrdenPago {
 	private String state;
 	private String idusuario;
 	private String idcart;
+	private int iddireccion;
 
 	private String monedapago;
 	private String redirect_url;
@@ -77,5 +78,11 @@ public class OrdenPago {
 
 	public void setMonedapago(String monedapago) {
 		this.monedapago = monedapago;
+	}
+	public int getIddireccion() {
+		return iddireccion;
+	}
+	public void setIddireccion(int iddireccion) {
+		this.iddireccion = iddireccion;
 	}
 }
