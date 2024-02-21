@@ -9,6 +9,7 @@ public class EmpleadoCargo {
 	private String idempleado;
 	private int idcargo;
 	private int idhorario;
+	private float salarionominal;
 
 	public int getId() {
 		return id;
@@ -55,6 +56,14 @@ public class EmpleadoCargo {
 	public EmpleadoCargo() {
 		super();
 		// TODO Auto-generated constructor stub
+	}
+
+	public float getSalarionominal() {
+		return salarionominal;
+	}
+
+	public void setSalarionominal(float salarionominal) {
+		this.salarionominal = salarionominal;
 	}
 
 }

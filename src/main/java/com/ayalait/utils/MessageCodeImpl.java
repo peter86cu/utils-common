@@ -66,5 +66,14 @@ public class MessageCodeImpl {
         }
         return resultMenssage;
     }
+    
+    public static String getMensajeServiceMarcasEmpleados(String code) {
+        String resultMenssage="No se ha definido mensaje para el codigo: "+code;
+        Map<String,String> message= Messages.listMessagesMarcasEmpleado();
+        if(message.containsKey(code)){
+            return message.get(code);
+        }
+        return resultMenssage;
+    }
 
 }

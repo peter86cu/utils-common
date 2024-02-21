@@ -119,4 +119,13 @@ public class Messages {
         return message;
     }
     
+    /***************************Marcas empleados**********************************/
+    public static Map<String, String> listMessagesMarcasEmpleado() {
+        Map<String,String> message= new HashMap<>();
+        message.put("3001","No se encontraron registros para el filtro de busqueda.");
+        message.put("3002","Error procesando la marca. Estado INCONSISTENTE.");
+        message.put("3003", "No se registraron marcas para la fecha solicitada.");
+        
+        return message;
+    }
 }
