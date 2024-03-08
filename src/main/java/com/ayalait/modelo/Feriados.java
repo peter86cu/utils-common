@@ -17,7 +17,7 @@ public class Feriados implements Serializable {
 	private int dia;
 	private int mes;
 	private int anio;
-	private String estado;
+	private int estado;
 	public int getId() {
 		return id;
 	}
@@ -48,10 +48,10 @@ public class Feriados implements Serializable {
 	public void setAnio(int anio) {
 		this.anio = anio;
 	}
-	public String getEstado() {
+	public int getEstado() {
 		return estado;
 	}
-	public void setEstado(String estado) {
+	public void setEstado(int estado) {
 		this.estado = estado;
 	}
 	
