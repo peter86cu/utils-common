@@ -7,7 +7,7 @@ public class Roles  {
 	
 	 private int idrol;
 	    private String descripcion;
-	    private List<Modulos> modulos = new ArrayList<>();
+	   // private List<Modulos> modulos = new ArrayList<>();
 
 	    public int getIdrol() {
 	        return idrol;
@@ -32,7 +32,7 @@ public class Roles  {
 	        this.descripcion = descripcion;
 	    }
 
-	    public List<Modulos> getModulos() {
+	/*    public List<Modulos> getModulos() {
 	        return modulos;
 	    }
 
@@ -41,7 +41,7 @@ public class Roles  {
 	    }
 
 	   
-
+*/
 	    public Roles() {
 	    }
 
