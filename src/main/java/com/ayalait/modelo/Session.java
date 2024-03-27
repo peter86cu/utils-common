@@ -1,5 +1,8 @@
 package com.ayalait.modelo;
 
+import java.util.List;
+
+import com.ayalait.utils.DiaAbierto;
 
 public class Session {
 
@@ -16,6 +19,7 @@ public class Session {
     private int idModuloLogin;
     private Acceso accesos;
     private String idAperturaDia;
+    private List<DiaAbierto> oepnDay;
 
     private String ip;
 
@@ -105,6 +109,14 @@ public class Session {
 
 	public void setIdAperturaDia(String idAperturaDia) {
 		this.idAperturaDia = idAperturaDia;
+	}
+
+	public List<DiaAbierto> getOepnDay() {
+		return oepnDay;
+	}
+
+	public void setOepnDay(List<DiaAbierto> oepnDay) {
+		this.oepnDay = oepnDay;
 	}
 
     

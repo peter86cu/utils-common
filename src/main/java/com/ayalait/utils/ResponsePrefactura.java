@@ -4,7 +4,7 @@ public class ResponsePrefactura {
 	private String id_prefactura;
 	private String fecha;
 	private String plazo;
-	private String forma_pago;
+	private String id_moneda;
 	private String items;
 	private String estado;
 	private String id_estado;
@@ -29,12 +29,7 @@ public class ResponsePrefactura {
 	public void setPlazo(String plazo) {
 		this.plazo = plazo;
 	}
-	public String getForma_pago() {
-		return forma_pago;
-	}
-	public void setForma_pago(String forma_pago) {
-		this.forma_pago = forma_pago;
-	}
+	
 	public String getItems() {
 		return items;
 	}
@@ -70,6 +65,12 @@ public class ResponsePrefactura {
 	}
 	public void setId_cliente(int id_cliente) {
 		this.id_cliente = id_cliente;
+	}
+	public String getId_moneda() {
+		return id_moneda;
+	}
+	public void setId_moneda(String id_moneda) {
+		this.id_moneda = id_moneda;
 	}
 
 	

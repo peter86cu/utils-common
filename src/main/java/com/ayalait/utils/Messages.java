@@ -26,7 +26,8 @@ public class Messages {
     public static Map<String, String> listMessagesHTTP() {
         Map<String,String> message= new HashMap<>();
         message.put("200","OK");
-        
+        message.put("400","El usuario no existe.");
+        message.put("406","Credenciales incorrectas.");
         message.put("1000","Se acabó el tiempo de conexión");
         message.put("1001","Token no enviado en el request.");
         return message;
