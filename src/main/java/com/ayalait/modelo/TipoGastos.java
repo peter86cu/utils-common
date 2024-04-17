@@ -9,6 +9,17 @@ public class TipoGastos  {
 
 	private String tipogasto;
 
+	private String gasto;
+
+	public String getGasto() {
+		return gasto;
+	}
+
+
+	public void setGasto(String gasto) {
+		this.gasto = gasto;
+	}
+
 
 	public TipoGastos() {
 	}

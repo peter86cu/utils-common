@@ -6,6 +6,8 @@ public class Email {
 	private String email;
 	private String subject;
 	private String message;
+	private boolean adjunto;
+	private String archivo;
 	
 	public String getName() {
 		return name;
@@ -30,6 +32,18 @@ public class Email {
 	}
 	public void setMessage(String message) {
 		this.message = message;
+	}
+	public boolean isAdjunto() {
+		return adjunto;
+	}
+	public void setAdjunto(boolean adjunto) {
+		this.adjunto = adjunto;
+	}
+	public String getArchivo() {
+		return archivo;
+	}
+	public void setArchivo(String archivo) {
+		this.archivo = archivo;
 	}
 	
 

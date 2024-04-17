@@ -17,8 +17,8 @@ public class ContableGastos implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
     private String id;
-    private String tipogasto;
-    private String moneda;
+    private int tipogasto;
+    private int moneda;
     private double saldo;
     private String factura;
     private String fecha;
@@ -30,16 +30,17 @@ public class ContableGastos implements Serializable {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public String getTipogasto() {
+	
+	public int getTipogasto() {
 		return tipogasto;
 	}
-	public void setTipogasto(String tipogasto) {
+	public void setTipogasto(int tipogasto) {
 		this.tipogasto = tipogasto;
 	}
-	public String getMoneda() {
+	public int getMoneda() {
 		return moneda;
 	}
-	public void setMoneda(String moneda) {
+	public void setMoneda(int moneda) {
 		this.moneda = moneda;
 	}
 	public double getSaldo() {
