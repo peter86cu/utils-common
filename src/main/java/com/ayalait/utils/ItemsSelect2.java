@@ -3,6 +3,7 @@ package com.ayalait.utils;
 public class ItemsSelect2 {
 	private String id;
 	private String text;
+	private String type;
 	
 	
 	public String getId() {
@@ -16,6 +17,12 @@ public class ItemsSelect2 {
 	}
 	public void setText(String text) {
 		this.text = text;
+	}
+	public String getType() {
+		return type;
+	}
+	public void setType(String type) {
+		this.type = type;
 	}
 	
 
