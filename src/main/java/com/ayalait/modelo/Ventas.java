@@ -13,7 +13,7 @@ public class Ventas  {
 	private String fecha_baja; 
 	private int movimiento; 
 	private double monto_total; 
-	private int id_cliente; 
+	private String id_cliente; 
 	private int id_apertura_cajero;
 	private int nro_consecutivo; 
 	private double iva5; 
@@ -128,12 +128,12 @@ public class Ventas  {
 	}
 
 
-	public int getId_cliente() {
+	public String getId_cliente() {
 		return id_cliente;
 	}
 
 
-	public void setId_cliente(int id_cliente) {
+	public void setId_cliente(String id_cliente) {
 		this.id_cliente = id_cliente;
 	}
 

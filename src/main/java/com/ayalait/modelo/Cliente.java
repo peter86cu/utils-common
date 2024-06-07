@@ -4,7 +4,7 @@ package com.ayalait.modelo;
 public class Cliente  {
 
 	
-	private int idCliente;
+	private String idCliente;
 
 	
 	private String direccion;
@@ -28,11 +28,11 @@ public class Cliente  {
 	public Cliente() {
 	}
 
-	public int getIdCliente() {
+	public String getIdCliente() {
 		return this.idCliente;
 	}
 
-	public void setIdCliente(int idCliente) {
+	public void setIdCliente(String idCliente) {
 		this.idCliente = idCliente;
 	}
 

@@ -2,6 +2,7 @@ package com.ayalait.utils;
 
 public class ResponsePrefactura {
 	private String id_prefactura;
+	private String cod_factura;
 	private String fecha;
 	private String plazo;
 	private String id_moneda;
@@ -10,7 +11,7 @@ public class ResponsePrefactura {
 	private String id_estado;
 	private String nombre;
 	private String cliente;
-	private int id_cliente;
+	private String id_cliente;
 	public String getId_prefactura() {
 		return id_prefactura;
 	}
@@ -60,10 +61,10 @@ public class ResponsePrefactura {
 	public void setCliente(String cliente) {
 		this.cliente = cliente;
 	}
-	public int getId_cliente() {
+	public String getId_cliente() {
 		return id_cliente;
 	}
-	public void setId_cliente(int id_cliente) {
+	public void setId_cliente(String id_cliente) {
 		this.id_cliente = id_cliente;
 	}
 	public String getId_moneda() {
@@ -71,6 +72,12 @@ public class ResponsePrefactura {
 	}
 	public void setId_moneda(String id_moneda) {
 		this.id_moneda = id_moneda;
+	}
+	public String getCod_factura() {
+		return cod_factura;
+	}
+	public void setCod_factura(String cod_factura) {
+		this.cod_factura = cod_factura;
 	}
 
 	
