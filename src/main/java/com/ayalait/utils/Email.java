@@ -8,6 +8,7 @@ public class Email {
 	private String message;
 	private boolean adjunto;
 	private String archivo;
+	private String nombreArchivo;
 	
 	public String getName() {
 		return name;
@@ -44,6 +45,12 @@ public class Email {
 	}
 	public void setArchivo(String archivo) {
 		this.archivo = archivo;
+	}
+	public String getNombreArchivo() {
+		return nombreArchivo;
+	}
+	public void setNombreArchivo(String nombreArchivo) {
+		this.nombreArchivo = nombreArchivo;
 	}
 	
 
